@@ -5,7 +5,7 @@ import ExploreCard from "./ExploreCard.tsx";
 
 const Explor = async () => {
   const exploreData: IexploreData[] = await getExplore();
-
+  console.log(exploreData);
   return (
     <section className="py-6">
       <div className="  container">
@@ -14,7 +14,11 @@ const Explor = async () => {
           {exploreData.map(({ distance, img, location }) => (
             <ExploreCard
               key={img}
-              img={img}
+              img={
+                img == "https://links.papareact.com/40m"
+                  ? "https://links.papareact.com/41m"
+                  : img
+              }
               distance={distance}
               location={location}
             />
