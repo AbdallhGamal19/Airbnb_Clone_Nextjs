@@ -8,6 +8,13 @@
     "start": "next start",
     "lint": "next lint"
   },
+  "resolutions": {
+    "react": "19.0.0-rc.1",
+    "react-dom": "19.0.0-rc.1"
+  },
+  "overrides": {
+    "@heroicons/react": "1.0.6"
+  },
   "dependencies": {
     "@heroicons/react": "^1.0.6",
     "leaflet": "^1.9.4",
